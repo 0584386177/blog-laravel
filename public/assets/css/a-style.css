@@ -1,3 +1,29 @@
 body{
     background-color:black !important;
 }
+#timer-wrapper{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.scramble {
+        font-size: 2rem;
+        padding: 1rem;
+        word-spacing: 1rem;
+        color:white;
+        font-weight:600;
+    }
+
+    #timer {
+        font-size: 14rem;
+        font-weight: bold;
+        color: #b0c4d8;
+        padding: 2rem 0;
+    }
+
+    .average {
+        font-size: 3em;
+        color: #b0bfc6;
+        margin-top: 2rem;
+    }

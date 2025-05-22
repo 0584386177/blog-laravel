@@ -1,11 +1,11 @@
-@include('components.head')
+@include('admin.components.head')
 
     <!-- BEGIN: Body-->
 
     <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click"
         data-menu="vertical-menu-modern" data-col="">
 
-       @include("components.sidebar")
+       @include("admin.components.sidebar")
 
         <!-- BEGIN: Content-->
         <div class="app-content content ">
@@ -13,7 +13,7 @@
                  @include($template);
         </div>
         <!-- END: Content-->
-        @include('components.scripts')
+        @include('admin.components.scripts')
     </body>
 
 </html>

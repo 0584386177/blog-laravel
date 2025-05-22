@@ -1,3 +1,4 @@
+        <script src="https://cdn.jsdelivr.net/npm/easytimer.js@4.5.4/dist/easytimer.min.js"></script>
 
         <!-- BEGIN: Vendor JS-->
         <script src="{{asset('assets/vendors/js/vendors.min.js')}}"></script>
@@ -20,9 +21,11 @@
         <script src="{{asset('assets/js/scripts/pages/app-email.js')}}"></script>
         <!-- END: Page JS-->
 
+        <script src="{{asset('assets/js/scripts/script.js')}}"></script>
+
+
         <script>
             $(window).on('load', function () {
-                if (feather) {
                     feather.replace({
                         width: 14,
                         height: 14
