@@ -8,7 +8,8 @@ class AdminController extends Controller
 {
     
     public function index(){
-        $template = "pages.home.page";
-        return view('MasterLayout',compact('template'));
+        $template = "admin.pages.home";
+        $hello = "Hello";
+        return view('layouts.AdminLayout',compact('template','hello'));
     }
 }

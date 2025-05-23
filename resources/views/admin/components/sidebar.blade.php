@@ -53,7 +53,7 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
              <li class="active"><a class="d-flex align-items-center" href="http://127.0.0.1:8000/"><i
                                 data-feather="circle"></i><span class="menu-item text-truncate"
-                                data-i18n="Analytics">Timer</span></a>
+                                data-i18n="Analytics">Trang chủ</span></a>
                     </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="http://127.0.0.1:8000/"><i
                         data-feather="mail"></i><span class="menu-title text-truncate"
