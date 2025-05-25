@@ -21,11 +21,12 @@ class AuthService implements AuthServiceInterface
     public function register($data = [])
     {
         if ($data) {
-            if ($data['register-password'] === $data['register-confirm']) {
+            if ($data['register-password'] === $data['register-confirm'] && isset($data['_token'])) {
                 $data['register-password'] = Hash::make($data['register-password']);
                 unset($data['register-confirm']);
                 return $this->authRepo->create($data);
             }
+          
         }
 
         throw new Exception('Không tạ được user');

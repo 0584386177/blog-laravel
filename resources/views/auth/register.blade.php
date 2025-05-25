@@ -5,10 +5,18 @@
         </div>
         <form class="auth-register-form mt-2" action="{{route("auth.register")}}" method="POST" novalidate="novalidate">
             @csrf
+             <div class="mb-1">
+                <label for="register-fullname" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control @error('register-fullname') is-invalid @enderror"
+                    id="register-fullname" name="register-fullname" >
+            </div>
+            @error('register-fullname')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
             <div class="mb-1">
-                <label for="register-username" class="form-label">Username</label>
+                <label for="register-username" class="form-label">Tài khoản</label>
                 <input type="text" class="form-control @error('register-username') is-invalid @enderror"
-                    id="register-username" name="register-username" placeholder="johndoe">
+                    id="register-username" name="register-username" >
             </div>
             @error('register-username')
                 <div class="text-danger">{{ $message }}</div>
@@ -16,7 +24,7 @@
             <div class="mb-1">
                 <label class="form-label">Email</label>
                 <input type="text" class="form-control" @error('register-email') is-invalid @enderror
-                    name="register-email" placeholder="john@example.com">
+                    name="register-email" >
                 @error('register-email')
                     <div class="text-danger">{{ $message }}</div>
                 @enderror

@@ -22,6 +22,7 @@ class RegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'register-fullname' => ['required'],
             'register-username' => ['required'],
             'register-email' => ['email','required'],
             'register-password' => ['required'],
@@ -32,9 +33,10 @@ class RegisterRequest extends FormRequest
 
     public function messages(){
           return [
-            'register-username.required' => "Vui lòng nhập username",
-            'register-email.required' => "Vui lòng nhập email",
-            'register-password.required' => "Vui lòng nhập mật khẩu",
+            'required' => "Vui lòng nhập :attribute",
+            // 'register-username.required' => "Vui lòng nhập username",
+            // 'register-email.required' => "Vui lòng nhập email",
+            // 'register-password.required' => "Vui lòng nhập mật khẩu",
         ];
     }
 }

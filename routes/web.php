@@ -24,3 +24,6 @@ Route::prefix('auth')->group(function () {
     Route::post('login', [LoginController::class, 'login'])->name('auth.login');
     Route::get('logout',[LogoutController::class,'logout'])->name('auth.logout');
 });
+
+// MAIL
+Route::get('active/{token}',[RegisterController::class,'activation'])->name('active.email');
